@@ -1,0 +1,119 @@
+
+en pseudocódigo
+
+int nacimiento, edad, anio_actual;
+anio_actual = 2024;
+imprimir("Diga su año de nacimiento: ");
+Leer(nacimiento);
+edad = anio_actual - nacimiento;
+imprimir("Su edad es: "+ edad);
+
+en c++
+
+#include<iostream>
+using namespace std;
+
+int main*{
+
+    int nacimiento, edad, anio_actual;
+    anio_actual = 2024;
+
+    cout << "Diga su año de nacimiento: ";
+    cin >> nacimiento;
+    edad = anio_actual - nacimiento;
+    cout << "Su edad es: "+ edad;
+
+return 0;
+}
+
+
+en estructura condicional
+
+int nacimiento, edad, anio_actual;
+anio_actual = 2024;
+imprimir("Diga su año de nacimiento: ");
+Leer(nacimiento);
+edad = anio_actual - nacimiento;
+imprimir("Su edad es: "+ edad);
+
+Si(edad >= 18){
+    imprimir("Vaya a votar");
+}
+Sino{
+    imprimir("No vas");
+}
+
+en c++
+
+#include<iostream>
+using namespace std;
+
+int main*{
+
+    int nacimiento, edad, anio_actual;
+    anio_actual = 2024;
+
+    cout << "Diga su año de nacimiento";
+    cin >> nacimiento;
+    edad = anio_actual - nacimiento;
+    cout << "Su edad es: "+ edad;
+
+    if(edad >= 18){
+        cout << " Vaya a votar";
+    }
+    else{
+        cout << " No vas";
+    }
+
+return 0;
+}
+
+
+añadiendo los valores de mes y día
+
+int a_nacimiento, m_nacimiento, d_nacimiento, edad, a_actual, m_actual, d_actual;
+a_actual = 2024
+m_actual = 3
+d_actual = 25
+;
+imprimir("Escriba su fecha de nacimiento (día, mes, anio): ");
+Leer(a_nacimiento, m_nacimiento, d_nacimiento);
+edad = a_actual - a_nacimiento;
+
+Si(m_nacimiento - m_actual){
+    // se queda igual la resta
+}
+Sino Si(m_nacimiento == m_actual){
+    Si(d_nacimiento <= d_actual)
+    //se queda igua la resta
+}
+    Sino(d_nacimiento > d_actual){
+    edad = edad - 1;
+    }
+Sino Si(m_nacimiento > m_actual){
+    edad = edad - 1<
+}
+
+Algoritmo TerrenoImpuesto{
+
+	Int edad, propiedadm2;
+	Double precio, impuesto1, impuesto2;
+
+	Imprimir("Calculadora de impuestos. Inserte su edad, la medida de su propiedad en m2 y el precio de su propiedad en $");
+	Leer(edad, propiedadm2, precio);
+
+	impuesto1 = precio * 0.15;
+	impuesto2 = precio * 0.05;
+
+	Si (edad >= 60){
+		Imprimir("Felicidades, usted esta jubilado/a. Usted no paga impuestos.");
+	}
+	Si (edad < 60){
+		Si (propiedadm2 > 150){
+			Imprimir("Este anio usted pagara en impuestos: $"+ impuesto1);
+		}
+		Si no{
+			imprimir("Este anio usted pagara en impuestos: $"+ impuesto2);
+	}
+	}
+}
